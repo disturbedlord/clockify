@@ -1,0 +1,148 @@
+html {
+  background-color: #f6f4fc;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f6f4fc;
+  font-family: "Hind", sans-serif;
+}
+.container .hero {
+  /* margin-top: -2.5rem; */
+  justify-content: start;
+  padding: 0;
+}
+
+.sidemenu {
+  border-right: 0.5px solid gainsboro;
+  z-index: 10;
+  margin: 0;
+  width: 200px;
+  transition: left 0.5s ease;
+
+  background-color: white;
+}
+
+.container .title {
+  margin: 0;
+  display: inline-flex;
+}
+
+.section {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px 0;
+  padding-left: 0;
+}
+
+.a:hover {
+  border-right: 2px solid blue;
+}
+
+.li {
+  padding-left: 2rem;
+}
+
+.section .col0-content {
+  background-color: white;
+}
+
+.ico {
+  margin-right: 1rem;
+}
+
+.container {
+  max-width: inherit;
+}
+
+.menu {
+  font-size: 1.2rem;
+}
+
+.menuContent {
+  margin: 3rem;
+}
+
+.column .projects .container .card {
+  height: 200px;
+  margin-top: 3rem;
+  border-radius: 5px;
+  transition: left 0.5s ease;
+}
+
+div.project_container {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: baseline;
+}
+
+#table .container {
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+.status_color {
+  color: green;
+}
+
+.star {
+  position: relative;
+  right: 50px;
+}
+
+.menu_button {
+  position: relative;
+  right: 8px;
+}
+
+.columns {
+  margin: 0;
+}
+
+input.new_project {
+  margin: 10px;
+  width: 580px;
+}
+
+#toggledMenu {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
+.li-toggled {
+  display: flex;
+  justify-content: center;
+}
+
+.a-toggled {
+  color: #383838;
+}
+
+.li-toggled:hover {
+  color: white;
+  border-right: 2px solid blue;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.rotate-text {
+  transform: rotateZ(-90deg);
+  border: none;
+  font-family: "Pacifico", cursive;
+  padding: 10px;
+  color: lightseagreen;
+  font-size: 1.8rem;
+  border-left: 1px dotted grey;
+}
+
+.li-toggled {
+  margin: 20px 0;
+}

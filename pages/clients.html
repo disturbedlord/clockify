@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="clients" id="clients">
+      <div class="container">
+        <div class="container team_container">
+          <p class="title">Clients</p>
+        </div>
+        <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Clients
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <div class="container" style="display: flex;">
+                  <div class="container team_header" style="display: flex;">
+                    <div class="select">
+                      <select>
+                        <option>Show active</option>
+                        <option>Show archived</option>
+                        <option>Show all</option>
+                      </select>
+                    </div>
+                    
+                  </div>
+                  <div class="container add_container">
+                    <div style="margin-left: 20px;">
+                        <input
+                          class="input"
+                          type="text"
+                          width=100px
+                          placeholder="Add new Client"
+                        />
+                      </div> 
+                  <button
+                    class="button is-info is-outlined add_btn"
+                    onclick="add_new_member()"
+                  >
+                    Add
+                  </button>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="box-content">
+                    <div class="content">
+                      <table class="table">
+                        <tr>
+                          <th>Name
+                              
+                          </th>
+                          <th></th>
+                        </tr>
+                        <tr>
+                          <td class="container"><p>Avinash</p>
+                            
+                          </td>
+                          <td>
+                            <div
+                            class="container"
+                            style="display: flex; justify-content: flex-end;"
+                          >
+                            
+                          <div class="edit_icon">
+                            <i class="fas fa-edit"  style="margin-top: 10px; margin-right: 30px;"></i>
+                          </div>
+                              
+                            <div style="margin-top: 10px;">
+                              <div class="dropdown is-hoverable">
+                                <div class="dropdown-trigger">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                <div
+                                  class="dropdown-menu"
+                                  id="dropdown-menu2"
+                                  role="menu"
+                                >
+                                  <div class="dropdown-content">
+                                    <div class="dropdown-item">
+                                      <p>
+                                        Archive
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title title is-5">
+                Edit Client
+              </p>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Change name to"
+                />
+               
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Cancel</a>
+              <a href="#" class="card-footer-item">Save</a>
+            </footer>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="../pages_css/styleTimeTracker.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="time_tracker" id="time_tracker">
+      <div class="container">
+        <div class="card">
+          <div
+            class="card-content time_tracker_card_content"
+            style="display: flex; justify-content: space-between;"
+          >
+            <input
+              style="margin-top: 10px;"
+              class="input input_btn"
+              type="text"
+              placeholder="What are you working on?"
+            />
+            <div class="container" style=" font-size: 20px;">
+              <table class="table">
+                <tr>
+                  <td>
+                    <div
+                      class="container add_project_btn"
+                      style="display: flex; margin-top: 10px;"
+                    >
+                      <i class="far fa-plus-square"></i>
+                      <p style="font-size: 1.05rem; margin-left: 5px;">
+                        Project
+                      </p>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div
+                      class="container add_project_btn"
+                      style="display: flex; margin-top: 10px;"
+                    >
+                      <i class="fas fa-tags"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="container"
+                      style="display: flex; margin-top: 10px;"
+                    >
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="container"
+                      style="display: flex; margin-top: 5px;"
+                    >
+                      <p>00:00:00</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="container"
+                      style="display: flex; margin-top: -2px;"
+                    >
+                      <button class="button is-info">Start</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div
+                      class="container"
+                      style="display: flex; margin-top: 5px ;"
+                    >
+                      <div class="dropdown is-hoverable">
+                        <div class="dropdown-trigger">
+                          <i class="fas fa-list"></i>
+                        </div>
+                        <div
+                          class="dropdown-menu"
+                          id="dropdown-menu2"
+                          role="menu"
+                          style="margin-top: -10px;"
+                        >
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <p>
+                                Timer
+                              </p>
+                            </div>
+                            <div class="dropdown-item" style="color: red;">
+                              <p>
+                                Manual
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

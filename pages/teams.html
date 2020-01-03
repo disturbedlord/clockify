@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <div class="teams" id="teams">
+      <div class="container">
+        <div class="container team_container">
+          <p class="title">Teams</p>
+        </div>
+
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Teams
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <div class="container" style="display: flex;">
+                <div class="container team_header" style="display: flex;">
+                  <div class="select">
+                    <select>
+                      <option>Show all</option>
+                      <option>With options</option>
+                    </select>
+                  </div>
+                  <div style="margin-left: 20px;">
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Search by email"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="button is-info is-outlined"
+                  onclick="add_new_member()"
+                >
+                  Add new Member
+                </button>
+              </div>
+              <div class="box">
+                <div class="box-content">
+                  <div class="content">
+                    <table class="table">
+                      <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Hourly Rate</th>
+                        <th>Access</th>
+                      </tr>
+                      <tr>
+                        <td>Avinash</td>
+                        <td>avi@bot.com</td>
+                        <td>1000$</td>
+                        <td>
+                          <div
+                            class="container"
+                            style="display: flex; justify-content: space-between;"
+                          >
+                            <div class="dropdown is-hoverable">
+                              <div class="dropdown-trigger">
+                                <button
+                                  class="button"
+                                  aria-haspopup="true"
+                                  aria-controls="dropdown-menu2"
+                                >
+                                  <span>Owner</span>
+                                  <span class="icon is-small">
+                                    <i
+                                      class="fas fa-angle-down"
+                                      aria-hidden="true"
+                                    ></i>
+                                  </span>
+                                </button>
+                              </div>
+                              <div
+                                class="dropdown-menu "
+                                id="dropdown-menu2"
+                                role="menu"
+                              >
+                                <div class="dropdown-content">
+                                  <div class="dropdown-item">
+                                    <input
+                                      class="input"
+                                      type="text"
+                                      placeholder="Search by name"
+                                    />
+                                  </div>
+                                  <hr class="dropdown-divider" />
+                                  <div class="dropdown-item">
+                                    <p>Groups</p>
+                                    <label class="checkbox">
+                                      <input type="checkbox" />
+                                      Admin
+                                    </label>
+                                    <br />
+                                    <label class="checkbox">
+                                      <input type="checkbox" />
+                                      Owner
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div style="margin-top: 10px;">
+                              <div class="dropdown is-hoverable">
+                                <div class="dropdown-trigger">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                <div
+                                  class="dropdown-menu"
+                                  id="dropdown-menu2"
+                                  role="menu"
+                                >
+                                  <div class="dropdown-content">
+                                    <div class="dropdown-item">
+                                      <p>
+                                        Resend Invite
+                                      </p>
+                                    </div>
+                                    <div class="dropdown-item">
+                                      <p>Copy Invite Link</p>
+                                    </div>
+                                    <div
+                                      class="dropdown-item"
+                                      style="color : red;"
+                                    >
+                                      <p>Delete user</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Avinash</td>
+                        <td>avi@bot.com</td>
+                        <td>1000$</td>
+                        <td>
+                          <div
+                            class="container"
+                            style="display: flex; justify-content: space-between;"
+                          >
+                            <div class="dropdown is-hoverable">
+                              <div class="dropdown-trigger">
+                                <button
+                                  class="button"
+                                  aria-haspopup="true"
+                                  aria-controls="dropdown-menu2"
+                                >
+                                  <span>Owner</span>
+                                  <span class="icon is-small">
+                                    <i
+                                      class="fas fa-angle-down"
+                                      aria-hidden="true"
+                                    ></i>
+                                  </span>
+                                </button>
+                              </div>
+                              <div
+                                class="dropdown-menu "
+                                id="dropdown-menu2"
+                                role="menu"
+                              >
+                                <div class="dropdown-content">
+                                  <div class="dropdown-item">
+                                    <input
+                                      class="input"
+                                      type="text"
+                                      placeholder="Search by name"
+                                    />
+                                  </div>
+                                  <hr class="dropdown-divider" />
+                                  <div class="dropdown-item">
+                                    <p>Groups</p>
+                                    <label class="checkbox">
+                                      <input type="checkbox" />
+                                      Admin
+                                    </label>
+                                    <br />
+                                    <label class="checkbox">
+                                      <input type="checkbox" />
+                                      Owner
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div style="margin-top: 10px;">
+                              <div class="dropdown is-hoverable">
+                                <div class="dropdown-trigger">
+                                  <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                                <div
+                                  class="dropdown-menu"
+                                  id="dropdown-menu2"
+                                  role="menu"
+                                >
+                                  <div class="dropdown-content">
+                                    <div class="dropdown-item">
+                                      <p>
+                                        Resend Invite
+                                      </p>
+                                    </div>
+                                    <div class="dropdown-item">
+                                      <p>Copy Invite Link</p>
+                                    </div>
+                                    <div
+                                      class="dropdown-item"
+                                      style="color : red;"
+                                    >
+                                      <p>Delete user</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title title is-5">
+              Add a new Member
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <input
+                class="input"
+                type="text"
+                placeholder="Add new members by email address"
+              />
+              <p
+                style="color: gray; font-size: 0.80rem; margin-left: 0.25rem; margin-top: 0.3rem;"
+              >
+                Add up to 5 members at once by separating emails with a comma
+              </p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">Cancel</a>
+            <a href="#" class="card-footer-item">Add</a>
+          </footer>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+.add_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add_btn {
+  margin-left: 20px;
+}

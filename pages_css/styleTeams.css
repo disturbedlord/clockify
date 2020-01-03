@@ -1,0 +1,23 @@
+.box {
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid #e4eaee;
+  padding: 0.25rem;
+  margin-top: 1rem;
+}
+
+.team_container {
+  margin-bottom: 30px;
+}
+
+.dropdown-menu {
+  left: -190px;
+}
+
+.content table td {
+  vertical-align: middle;
+}
+
+.modal-content {
+  border-radius: 5px;
+}

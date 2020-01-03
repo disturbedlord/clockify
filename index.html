@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello Bulma!</title>
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-1.4.2.min.js"
+    ></script>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="../pages_css/styleProjects.css" />
+    <link rel="stylesheet" href="../pages_css/styleTeams.css" />
+    <link rel="stylesheet" href="../pages_css/styleClients.css" />
+
+    <script>
+      $(function() {
+        $("#panel").load("../pages/time_tracker.html");
+      });
+    </script>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+ 
+  </head>
+  <body>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item">
+            Home
+          </a>
+    
+          <a class="navbar-item">
+            Documentation
+          </a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+    
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <a class="navbar-item">
+                Jobs
+              </a>
+              <a class="navbar-item">
+                Contact
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item">
+                Report an issue
+              </a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="columns" id="columns">
+          <div
+            class="column is-one-fifth sidemenu hero is-fullheight"
+            id="sidemenu"
+            style="width: 250px;"
+          >
+            <div>
+              <aside class="menu">
+                <div
+                  class="container"
+                  style="margin: 0 20px; padding: 30px 0; display: flex; justify-content: space-between; "
+                >
+                  <p
+                    style=' font-family: "Pacifico", cursive;
+                    font-size : 2.5rem; margin-left: 2rem; color: lightseagreen; '
+                  >
+                    Clockify
+                  </p>
+                  
+                </div>
+                <ul class="menu-list" id="menu-list">
+                  <li class="li" onclick="showContentFullTab(1)">
+                    <a class="a " id="tab1"
+                      ><i class="ico fas fa-chalkboard"></i>Dashboard</a
+                    >
+                  </li>
+                  <li class="li" onclick="showContentFullTab(2)">
+                    <a class="a is-active" id="tab2" style="border-top-left-radius : 0.3rem;border-bottom-left-radius : 0.3rem;"
+                      ><i class="ico fas fa-clock"></i> Tracker</a
+                    >
+                  </li>
+                  <li class="li" onclick="showContentFullTab(3)">
+                    <a class="a" id="tab3"
+                      ><i class="ico fas fa-project-diagram"></i>Projects</a
+                    >
+                  </li>
+                  <li class="li" onclick="showContentFullTab(4)">
+                    <a class="a" id="tab4"
+                      ><i class="ico fas fa-users"></i>Teams</a
+                    >
+                  </li>
+                  <li class="li" onclick="showContentFullTab(5)">
+                    <a class="a" id="tab5"
+                      ><i class="ico fas fa-user-tie"></i>Clients</a
+                    >
+                  </li>
+                  <li>
+                    <div style="margin-top: 6rem; text-align: center;">
+                    <button class="button is-link is-light" onclick="hide_sidemenu()">
+                      <i
+                      class="fas fa-arrow-left"
+                      
+                    ></i>
+                    </button>                  
+                  </div>
+                  </li>
+                  <br />
+                </ul>
+                <div class="container" style="width: 100%;"></div>
+              </aside>
+            </div>
+          </div>
+
+          <div
+            class="column is-one-fifth hero is-fullheight"
+            style="width: 60px; background-color: white;   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            "
+            id="toggledMenu"
+          >
+            <div>
+              <aside class="menu-toggled">
+                <ul class="menu-list-toggled">
+                  <li class="li-toggled" style="border: none;">
+                    <a class="a-toggled rotate-text">Clockify</i
+                    ></a>
+                  </li>
+                  <li class="li-toggled " id= "li1" onclick="showContentShortTab(1)" style="margin-top: 2.5rem;">
+                    <a class="a-toggled" id="shorttab1"
+                      ><i class="icon fas fa-clock"></i
+                    ></a>
+                  </li>
+                  <li class="li-toggled li2" id="li2" onclick="showContentShortTab(2)">
+                    <a class="a-toggled" id="shorttab2"
+                      ><i class="icon fas fa-chalkboard"></i
+                    ></a>
+                  </li>
+                  <li class="li-toggled li3" id="li3" onclick="showContentShortTab(3)">
+                    <a class="a-toggled" id="shorttab3"
+                      ><i class="icon fas fa-project-diagram"></i
+                    ></a>
+                  </li>
+                  <li class="li-toggled li4" id="li4" onclick="showContentShortTab(4)">
+                    <a class="a-toggled" id="shorttab4"
+                      ><i class="icon fas fa-users"></i
+                    ></a>
+                  </li>
+                  <li class="li-toggled li5" id="li5" onclick="showContentShortTab(5)">
+                    <a class="a-toggled" id="shorttab5"
+                      ><i class="icon fas fa-user-tie"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <div style="margin-top: 3rem; text-align: center;">
+                    <button class="button is-link is-light" onclick="show_sidemenu()">
+                      <i
+                     class="fas fa-arrow-right" 
+                     
+                    ></i>
+                    </button>                  
+                  </div>
+                  </li>
+                </ul>
+              </aside>
+            </div>
+          </div>
+          <!-- Projects Section -->
+          <div class="column menuContent">
+            <div id="panel"></div>
+            <!-- projects END -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../pages_js/projects_script.js"></script>
+    <script src="../pages_js/teams_script.js"></script>
+  </body>
+</html>

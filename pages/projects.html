@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  </head>
+  <body>
+    <div class="projects" id="projects">
+      <div class="container">
+        <div class="container project_container">
+          <p class="title">Projects</p>
+          <button
+            class="button is-info is-outlined"
+            onclick="open_new_project()"
+          >
+            Add a new Project
+          </button>
+        </div>
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">Projects</p>
+          </header>
+          <div class="card-content">
+            <table class="table is-fullwidth " id="table">
+              <tr>
+                <th>Name</th>
+                <th>Client</th>
+                <th>Status</th>
+                <th>Access</th>
+                <th style="text-align: right;">
+                  <i class="far fa-edit"></i>
+                </th>
+              </tr>
+              <tr>
+                <td>Web</td>
+                <td>Avi</td>
+                <td class="status_color">Live</td>
+                <td>Public</td>
+                <td class="container" style="text-align: right;">
+                  <i class="far fa-star star"></i>
+                  <i class="fas fa-ellipsis-v menu_button"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>Web</td>
+                <td>Avi</td>
+                <td class="status_color">Live</td>
+                <td>Public</td>
+                <td class="container" style="text-align: right;">
+                  <i class="far fa-star star"></i>
+                  <i class="fas fa-ellipsis-v menu_button"></i>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              Add a project
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <table class="table">
+                <tr>
+                  <th>
+                    <input
+                      class="input"
+                      type="text"
+                      placeholder="Enter project name"
+                    />
+                  </th>
+                  <th>
+                    <div class="select">
+                      <select>
+                        <option>Status</option>
+                        <option>Live</option>
+                        <option>Dead</option>
+                      </select>
+                    </div>
+                  </th>
+                </tr>
+              </table>
+
+              <table class="table">
+                <tr>
+                  <th>
+                    <label class="checkbox" style="width: 270px;">
+                      <input type="checkbox" />
+                      Public
+                    </label>
+                  </th>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">Cancel</a>
+            <a href="#" class="card-footer-item">Create</a>
+          </footer>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </body>
+</html>
